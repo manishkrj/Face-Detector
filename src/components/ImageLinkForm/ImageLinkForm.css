@@ -1,0 +1,28 @@
+.form {
+  width: 700px;
+  background-size:40px 60px;
+}
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(20, end),
+    blink-caret 1s step-end infinite,
+    slidein 0.5s ease 3s forwards;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255) }
+}
+@keyframes slidein {
+  100% {
+    border: transparent;
+  }
+}
